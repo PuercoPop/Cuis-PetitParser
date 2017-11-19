@@ -482,9 +482,6 @@ A parser that performs an action block upon activation with the stream and a con
 !BlockClosure methodsFor: '*petitparser-core-converting' stamp: 'lr 11/29/2011 20:48'!
 asParser	"Answer a parser implemented in the receiving one-argument block."	^ PPPluggableParser on: self! !
 
-!BlockContext methodsFor: '*petitparser-core-converting' stamp: 'lr 11/29/2011 20:48'!
-asParser	"Answer a parser implemented in the receiving one-argument block."	^ PPPluggableParser on: self! !
-
 !Character methodsFor: '*petitparser-core-operators' stamp: 'lr 6/12/2010 09:04'!
 - aCharacter	"Create a range of characters between the receiver and the argument."		^ PPPredicateObjectParser between: self and: aCharacter! !
 
