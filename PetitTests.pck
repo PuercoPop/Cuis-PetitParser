@@ -1,5 +1,6 @@
-'From Cuis 4.0 of 21 April 2012 [latest update: #1291] on 3 June 2012 at 12:01:25 pm'!
+'From Cuis 5.0 of 7 November 2016 [latest update: #3222] on 27 November 2017 at 2:47:15 pm'!
 'Description Please enter a description for this package '!
+!provides: 'PetitTests' 1 1!
 !classDefinition: #PPAbstractParserTest category: #'PetitTests-Core'!
 TestCase subclass: #PPAbstractParserTest
 	instanceVariableNames: ''
@@ -8,26 +9,6 @@ TestCase subclass: #PPAbstractParserTest
 	category: 'PetitTests-Core'!
 !classDefinition: 'PPAbstractParserTest class' category: #'PetitTests-Core'!
 PPAbstractParserTest class
-	instanceVariableNames: ''!
-
-!classDefinition: #PPArithmeticParser category: #'PetitTests-Examples'!
-PPCompositeParser subclass: #PPArithmeticParser
-	instanceVariableNames: 'terms addition factors multiplication power primary parentheses number'
-	classVariableNames: ''
-	poolDictionaries: ''
-	category: 'PetitTests-Examples'!
-!classDefinition: 'PPArithmeticParser class' category: #'PetitTests-Examples'!
-PPArithmeticParser class
-	instanceVariableNames: ''!
-
-!classDefinition: #PPComposedTest category: #'PetitTests-Tests'!
-PPAbstractParserTest subclass: #PPComposedTest
-	instanceVariableNames: ''
-	classVariableNames: ''
-	poolDictionaries: ''
-	category: 'PetitTests-Tests'!
-!classDefinition: 'PPComposedTest class' category: #'PetitTests-Tests'!
-PPComposedTest class
 	instanceVariableNames: ''!
 
 !classDefinition: #PPCompositeParserTest category: #'PetitTests-Core'!
@@ -60,26 +41,6 @@ PPArithmeticParserTest subclass: #PPExpressionParserTest
 PPExpressionParserTest class
 	instanceVariableNames: ''!
 
-!classDefinition: #PPExtensionTest category: #'PetitTests-Tests'!
-PPAbstractParserTest subclass: #PPExtensionTest
-	instanceVariableNames: ''
-	classVariableNames: ''
-	poolDictionaries: ''
-	category: 'PetitTests-Tests'!
-!classDefinition: 'PPExtensionTest class' category: #'PetitTests-Tests'!
-PPExtensionTest class
-	instanceVariableNames: ''!
-
-!classDefinition: #PPLambdaParser category: #'PetitTests-Examples'!
-PPCompositeParser subclass: #PPLambdaParser
-	instanceVariableNames: 'expression abstraction application variable'
-	classVariableNames: ''
-	poolDictionaries: ''
-	category: 'PetitTests-Examples'!
-!classDefinition: 'PPLambdaParser class' category: #'PetitTests-Examples'!
-PPLambdaParser class
-	instanceVariableNames: ''!
-
 !classDefinition: #PPLambdaParserTest category: #'PetitTests-Tests'!
 PPCompositeParserTest subclass: #PPLambdaParserTest
 	instanceVariableNames: ''
@@ -90,6 +51,26 @@ PPCompositeParserTest subclass: #PPLambdaParserTest
 PPLambdaParserTest class
 	instanceVariableNames: ''!
 
+!classDefinition: #PPComposedTest category: #'PetitTests-Tests'!
+PPAbstractParserTest subclass: #PPComposedTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'PetitTests-Tests'!
+!classDefinition: 'PPComposedTest class' category: #'PetitTests-Tests'!
+PPComposedTest class
+	instanceVariableNames: ''!
+
+!classDefinition: #PPExtensionTest category: #'PetitTests-Tests'!
+PPAbstractParserTest subclass: #PPExtensionTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'PetitTests-Tests'!
+!classDefinition: 'PPExtensionTest class' category: #'PetitTests-Tests'!
+PPExtensionTest class
+	instanceVariableNames: ''!
+
 !classDefinition: #PPObjectTest category: #'PetitTests-Tests'!
 PPAbstractParserTest subclass: #PPObjectTest
 	instanceVariableNames: ''
@@ -98,16 +79,6 @@ PPAbstractParserTest subclass: #PPObjectTest
 	category: 'PetitTests-Tests'!
 !classDefinition: 'PPObjectTest class' category: #'PetitTests-Tests'!
 PPObjectTest class
-	instanceVariableNames: ''!
-
-!classDefinition: #PPParserResource category: #'PetitTests-Core'!
-TestResource subclass: #PPParserResource
-	instanceVariableNames: 'parsers'
-	classVariableNames: ''
-	poolDictionaries: ''
-	category: 'PetitTests-Core'!
-!classDefinition: 'PPParserResource class' category: #'PetitTests-Core'!
-PPParserResource class
 	instanceVariableNames: ''!
 
 !classDefinition: #PPParserTest category: #'PetitTests-Tests'!
@@ -150,6 +121,36 @@ PPAbstractParserTest subclass: #PPTokenTest
 PPTokenTest class
 	instanceVariableNames: ''!
 
+!classDefinition: #PPParserResource category: #'PetitTests-Core'!
+TestResource subclass: #PPParserResource
+	instanceVariableNames: 'parsers'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'PetitTests-Core'!
+!classDefinition: 'PPParserResource class' category: #'PetitTests-Core'!
+PPParserResource class
+	instanceVariableNames: ''!
+
+!classDefinition: #PPArithmeticParser category: #'PetitTests-Examples'!
+PPCompositeParser subclass: #PPArithmeticParser
+	instanceVariableNames: 'terms addition factors multiplication power primary parentheses number'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'PetitTests-Examples'!
+!classDefinition: 'PPArithmeticParser class' category: #'PetitTests-Examples'!
+PPArithmeticParser class
+	instanceVariableNames: ''!
+
+!classDefinition: #PPLambdaParser category: #'PetitTests-Examples'!
+PPCompositeParser subclass: #PPLambdaParser
+	instanceVariableNames: 'expression abstraction application variable'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'PetitTests-Examples'!
+!classDefinition: 'PPLambdaParser class' category: #'PetitTests-Examples'!
+PPLambdaParser class
+	instanceVariableNames: ''!
+
 
 !PPScriptingTest commentStamp: '<historical>' prior: 0!
 These are some simple demo-scripts of parser combinators for the compiler construction course.http://www.iam.unibe.ch/~scg/Teaching/CC/index.html!
@@ -184,32 +185,38 @@ isAbstract	^ self name = #PPAbstractParserTest! !
 !PPAbstractParserTest class methodsFor: 'accessing' stamp: 'lr 6/12/2010 08:22'!
 packageNamesUnderTest	^ #('PetitParser' 'PetitTests')! !
 
-!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 4/6/2010 19:38'!
-addition	^ (factors separatedBy: ($+ asParser / $- asParser) token trim) 		foldLeft: [ :a :op :b | a perform: op value asSymbol with: b ]! !
+!PPCompositeParserTest methodsFor: 'utilities' stamp: 'lr 11/29/2010 11:20'!
+assert: aCollection is: anObject	self parse: aCollection.	self		assert: result = anObject		description: 'Got: ' , result printString , '; Expected: ' , anObject printString		resumable: true! !
 
-!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 9/15/2008 09:28'!
-factors	^ multiplication / power! !
+!PPCompositeParserTest methodsFor: 'parsing' stamp: 'lr 11/18/2011 19:45'!
+fail: aString rule: aSymbol 	| production |	production := self parserInstanceFor: aSymbol.	result := production end parse: aString.	self		assert: result isPetitFailure		description: 'Able to parse ' , aString printString.	^ result! !
 
-!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 4/6/2010 19:38'!
-multiplication	^ (power separatedBy: ($* asParser / $/ asParser) token trim)		foldLeft: [ :a :op :b | a perform: op value asSymbol with: b ]! !
+!PPCompositeParserTest methodsFor: 'parsing' stamp: 'lr 11/29/2010 11:26'!
+parse: aString 	^ self parse: aString rule: #start! !
 
-!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 4/6/2010 19:38'!
-number	^ ($- asParser optional , #digit asParser plus , ($. asParser , #digit asParser plus) optional) token trim ==> [ :token | token value asNumber ]! !
+!PPCompositeParserTest methodsFor: 'parsing' stamp: 'lr 11/18/2011 19:45'!
+parse: aString rule: aSymbol	| production |	production := self parserInstanceFor: aSymbol.	result := production end parse: aString.	self		deny: result isPetitFailure		description: 'Unable to parse ' , aString printString.	^ result! !
 
-!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 4/6/2010 19:38'!
-parentheses	^ $( asParser flatten trim , terms , $) asParser flatten trim ==> #second! !
+!PPCompositeParserTest methodsFor: 'accessing' stamp: 'FirstnameLastname 11/26/2009 21:52'!
+parserClass	self subclassResponsibility! !
 
-!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 4/6/2010 19:38'!
-power	^ (primary separatedBy: $^ asParser token trim) foldRight: [ :a :op :b | a raisedTo: b ]! !
+!PPCompositeParserTest methodsFor: 'accessing' stamp: 'lr 3/29/2010 15:21'!
+parserInstance	^ PPParserResource current parserAt: self parserClass! !
 
-!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 9/15/2008 09:28'!
-primary	^ number / parentheses! !
+!PPCompositeParserTest methodsFor: 'accessing' stamp: 'lr 11/18/2011 19:44'!
+parserInstanceFor: aSymbol	^ aSymbol = #start		ifTrue: [ self parserInstance ]		ifFalse: [			self parserInstance				productionAt: aSymbol 				ifAbsent: [ self error: 'Production ' , self parserClass name , '>>' , aSymbol printString , ' not found.' ] ]! !
 
-!PPArithmeticParser methodsFor: 'accessing' stamp: 'lr 7/3/2008 17:06'!
-start	^ terms end! !
+!PPCompositeParserTest methodsFor: 'running' stamp: 'FirstnameLastname 11/26/2009 21:48'!
+setUp	super setUp.	parser := self parserInstance! !
 
-!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 9/15/2008 09:29'!
-terms	^ addition / factors! !
+!PPCompositeParserTest methodsFor: 'running' stamp: 'lr 11/29/2010 11:19'!
+tearDown	super tearDown.	parser := result := nil! !
+
+!PPCompositeParserTest class methodsFor: 'testing' stamp: 'lr 10/4/2009 17:09'!
+isAbstract	^ self name = #PPCompositeParserTest! !
+
+!PPCompositeParserTest class methodsFor: 'accessing' stamp: 'lr 3/29/2010 15:21'!
+resources	^ Array with: PPParserResource! !
 
 !PPArithmeticParserTest methodsFor: 'accessing' stamp: 'FirstnameLastname 11/26/2009 21:53'!
 parserClass	^ PPArithmeticParser! !
@@ -252,6 +259,60 @@ testSub	self assert: '1 - 2' is: -1.	self assert: '1.2 - 1.2' is: 0.	self ass
 
 !PPArithmeticParserTest methodsFor: 'testing-operations' stamp: 'lr 4/28/2008 11:56'!
 testSubMany	self assert: '1' is: 1.	self assert: '1 - 2' is: -1.	self assert: '1 - 2 - 3' is: -4.	self assert: '1 - 2 - 3 - 4' is: -8.	self assert: '1 - 2 - 3 - 4 - 5' is: -13! !
+
+!PPExpressionParserTest methodsFor: 'accessing' stamp: 'lr 4/6/2010 19:39'!
+parserInstance	| expression parens number |	expression := PPExpressionParser new.	parens := $( asParser token trim , expression , $) asParser token trim		==> [ :nodes | nodes second ].	number := (#digit asParser plus , ($. asParser , #digit asParser plus) optional) token trim		==> [ :token | token value asNumber ].	expression term: parens / number.	expression		group: [ :g |			g prefix: $- asParser token trim do: [ :op :a | a negated ] ];		group: [ :g |			g postfix: '++' asParser token trim do: [ :a :op | a + 1 ].			g postfix: '--' asParser token trim do: [ :a :op | a - 1 ] ];		group: [ :g |			g right: $^ asParser token trim do: [ :a :op :b | a raisedTo: b ] ];		group: [ :g |			g left: $* asParser token trim do: [ :a :op :b | a * b ].			g left: $/ asParser token trim do: [ :a :op :b | a / b ] ];		group: [ :g |			g left: $+ asParser token trim do: [ :a :op :b | a + b ].			g left: $- asParser token trim do: [ :a :op :b | a - b ] ].	^ expression end! !
+
+!PPExpressionParserTest methodsFor: 'testing' stamp: 'FirstnameLastname 11/26/2009 22:13'!
+testPostfixAdd	self assert: '0++' is: 1.	self assert: '0++++' is: 2.	self assert: '0++++++' is: 3.	self assert: '0+++1' is: 2.	self assert: '0+++++1' is: 3.	self assert: '0+++++++1' is: 4! !
+
+!PPExpressionParserTest methodsFor: 'testing' stamp: 'FirstnameLastname 11/26/2009 22:11'!
+testPostfixSub	self assert: '1--' is: 0.	self assert: '2----' is: 0.	self assert: '3------' is: 0.	self assert: '2---1' is: 0.	self assert: '3-----1' is: 0.	self assert: '4-------1' is: 0.! !
+
+!PPExpressionParserTest methodsFor: 'testing' stamp: 'FirstnameLastname 11/26/2009 22:13'!
+testPrefixNegate	self assert: '1' is: 1.	self assert: '-1' is: -1.	self assert: '--1' is: 1.	self assert: '---1' is: -1! !
+
+!PPExpressionParserTest class methodsFor: 'testing' stamp: 'lr 4/6/2010 19:40'!
+shouldInheritSelectors	^ true! !
+
+!PPLambdaParserTest methodsFor: 'accessing' stamp: 'FirstnameLastname 11/26/2009 21:53'!
+parserClass	^ PPLambdaParser! !
+
+!PPLambdaParserTest methodsFor: 'testing' stamp: 'lr 4/30/2008 09:38'!
+testAbstraction	self assert: '\x.y' is: #('x' 'y').	self assert: '\x.\y.z' is: #('x' ('y' 'z'))! !
+
+!PPLambdaParserTest methodsFor: 'testing-curch' stamp: 'FirstnameLastname 11/26/2009 21:53'!
+testAnd	self assert: self parserClass and = #('p' ('q' (('p' 'q') 'p')))! !
+
+!PPLambdaParserTest methodsFor: 'testing' stamp: 'lr 4/30/2008 09:38'!
+testApplication	self assert: '(x x)' is: #('x' 'x').	self assert: '(x y)' is: #('x' 'y').	self assert: '((x y) z)' is: #(('x' 'y') 'z').	self assert: '(x (y z))' is: #('x' ('y' 'z'))! !
+
+!PPLambdaParserTest methodsFor: 'testing-curch' stamp: 'FirstnameLastname 11/26/2009 21:53'!
+testFalse	self assert: self parserClass false = #('x' ('y' 'y'))! !
+
+!PPLambdaParserTest methodsFor: 'testing-curch' stamp: 'FirstnameLastname 11/26/2009 21:53'!
+testIfThenElse	self assert: self parserClass ifthenelse = #('p' 'p')! !
+
+!PPLambdaParserTest methodsFor: 'testing-curch' stamp: 'FirstnameLastname 11/26/2009 21:53'!
+testNot	self assert: self parserClass not = #('p' ('a' ('b' (('p' 'b') 'a'))))! !
+
+!PPLambdaParserTest methodsFor: 'testing-curch' stamp: 'FirstnameLastname 11/26/2009 21:53'!
+testOr	self assert: self parserClass or = #('p' ('q' (('p' 'p') 'q')))! !
+
+!PPLambdaParserTest methodsFor: 'testing-utilities' stamp: 'lr 11/29/2010 11:29'!
+testParseOnError	| beenHere |	result := self parserClass		parse: '\x.y'		onError: [ self fail ].	self assert: result = #('x' 'y').		beenHere := false.	result := self parserClass		parse: '\x.'		onError: [ beenHere := true ].	self assert: beenHere.		beenHere := false.	result := self parserClass		parse: '\x.'		onError: [ :fail | beenHere := true. fail ].	self assert: beenHere.	self assert: (result message includesSubString: '$(').	self assert: (result message includesSubString: 'expected').	self assert: (result position = 0).	beenHere := false.	result := self parserClass		parse: '\x.'		onError: [ :msg :pos | 			self assert: (msg includesSubString: '$(').			self assert: (msg includesSubString: 'expected').			self assert: (pos = 0).			beenHere := true ].	self assert: result.	self assert: beenHere! !
+
+!PPLambdaParserTest methodsFor: 'testing-utilities' stamp: 'lr 11/29/2010 11:29'!
+testParseStartingAtOnError	| beenHere |	result := self parserClass		parse: 'x'		startingAt: #variable		onError: [ self fail ].	self assert: result = 'x'.		beenHere := false.	result := self parserClass		parse: '\'		startingAt: #variable		onError: [ beenHere := true ].	self assert: beenHere.		beenHere := false.	result := self parserClass		parse: '\'		startingAt: #variable		onError: [ :fail | beenHere := true. fail ].	self assert: beenHere.	self assert: result message = 'letter expected'.	self assert: result position = 0.	beenHere := false.	result := self parserClass		parse: '\'		startingAt: #variable		onError: [ :msg :pos | 			self assert: msg = 'letter expected'.			self assert: pos = 0.			beenHere := true ].	self assert: beenHere! !
+
+!PPLambdaParserTest methodsFor: 'testing-utilities' stamp: 'FirstnameLastname 11/26/2009 21:56'!
+testProductionAt	self assert: (parser productionAt: #foo) isNil.	self assert: (parser productionAt: #foo ifAbsent: [ true ]).		self assert: (parser productionAt: #start) notNil.	self assert: (parser productionAt: #start ifAbsent: [ true ]) notNil.		self assert: (parser productionAt: #variable) notNil.	self assert: (parser productionAt: #variable ifAbsent: [ true ]) notNil! !
+
+!PPLambdaParserTest methodsFor: 'testing-curch' stamp: 'FirstnameLastname 11/26/2009 21:53'!
+testTrue	self assert: self parserClass true = #('x' ('y' 'x'))! !
+
+!PPLambdaParserTest methodsFor: 'testing' stamp: 'lr 4/30/2008 09:33'!
+testVariable	self assert: 'x' is: 'x'.	self assert: 'xy' is: 'xy'.	self assert: 'x12' is: 'x12'! !
 
 !PPComposedTest methodsFor: 'accessing' stamp: 'lr 2/8/2010 16:44'!
 comment	^ ($" asParser , $" asParser negate star , $" asParser) flatten! !
@@ -310,54 +371,6 @@ testParseAnBnCn	"PEGs for a non context- free language: 				a^n , b^n , c^n	
 !PPComposedTest methodsFor: 'testing-examples' stamp: 'lr 6/3/2010 13:51'!
 testReturn	| number spaces return |	number := #digit asParser plus token.	spaces := #space asParser star.	return := (spaces , $^ asParser token , spaces , number)		==> [ :nodes | Array with: #return with: (nodes at: 4) value ].	self assert: return parse: '^1' to: #(return '1').	self assert: return parse: '^12' to: #(return '12').	self assert: return parse: '^ 123' to: #(return '123').	self assert: return parse: '^  1234' to: #(return '1234').		self assert: return fail: '1'.	self assert: return fail: '^'! !
 
-!PPCompositeParserTest methodsFor: 'utilities' stamp: 'lr 11/29/2010 11:20'!
-assert: aCollection is: anObject	self parse: aCollection.	self		assert: result = anObject		description: 'Got: ' , result printString , '; Expected: ' , anObject printString		resumable: true! !
-
-!PPCompositeParserTest methodsFor: 'parsing' stamp: 'lr 11/18/2011 19:45'!
-fail: aString rule: aSymbol 	| production |	production := self parserInstanceFor: aSymbol.	result := production end parse: aString.	self		assert: result isPetitFailure		description: 'Able to parse ' , aString printString.	^ result! !
-
-!PPCompositeParserTest methodsFor: 'parsing' stamp: 'lr 11/29/2010 11:26'!
-parse: aString 	^ self parse: aString rule: #start! !
-
-!PPCompositeParserTest methodsFor: 'parsing' stamp: 'lr 11/18/2011 19:45'!
-parse: aString rule: aSymbol	| production |	production := self parserInstanceFor: aSymbol.	result := production end parse: aString.	self		deny: result isPetitFailure		description: 'Unable to parse ' , aString printString.	^ result! !
-
-!PPCompositeParserTest methodsFor: 'accessing' stamp: 'FirstnameLastname 11/26/2009 21:52'!
-parserClass	self subclassResponsibility! !
-
-!PPCompositeParserTest methodsFor: 'accessing' stamp: 'lr 3/29/2010 15:21'!
-parserInstance	^ PPParserResource current parserAt: self parserClass! !
-
-!PPCompositeParserTest methodsFor: 'accessing' stamp: 'lr 11/18/2011 19:44'!
-parserInstanceFor: aSymbol	^ aSymbol = #start		ifTrue: [ self parserInstance ]		ifFalse: [			self parserInstance				productionAt: aSymbol 				ifAbsent: [ self error: 'Production ' , self parserClass name , '>>' , aSymbol printString , ' not found.' ] ]! !
-
-!PPCompositeParserTest methodsFor: 'running' stamp: 'FirstnameLastname 11/26/2009 21:48'!
-setUp	super setUp.	parser := self parserInstance! !
-
-!PPCompositeParserTest methodsFor: 'running' stamp: 'lr 11/29/2010 11:19'!
-tearDown	super tearDown.	parser := result := nil! !
-
-!PPCompositeParserTest class methodsFor: 'testing' stamp: 'lr 10/4/2009 17:09'!
-isAbstract	^ self name = #PPCompositeParserTest! !
-
-!PPCompositeParserTest class methodsFor: 'accessing' stamp: 'lr 3/29/2010 15:21'!
-resources	^ Array with: PPParserResource! !
-
-!PPExpressionParserTest methodsFor: 'accessing' stamp: 'lr 4/6/2010 19:39'!
-parserInstance	| expression parens number |	expression := PPExpressionParser new.	parens := $( asParser token trim , expression , $) asParser token trim		==> [ :nodes | nodes second ].	number := (#digit asParser plus , ($. asParser , #digit asParser plus) optional) token trim		==> [ :token | token value asNumber ].	expression term: parens / number.	expression		group: [ :g |			g prefix: $- asParser token trim do: [ :op :a | a negated ] ];		group: [ :g |			g postfix: '++' asParser token trim do: [ :a :op | a + 1 ].			g postfix: '--' asParser token trim do: [ :a :op | a - 1 ] ];		group: [ :g |			g right: $^ asParser token trim do: [ :a :op :b | a raisedTo: b ] ];		group: [ :g |			g left: $* asParser token trim do: [ :a :op :b | a * b ].			g left: $/ asParser token trim do: [ :a :op :b | a / b ] ];		group: [ :g |			g left: $+ asParser token trim do: [ :a :op :b | a + b ].			g left: $- asParser token trim do: [ :a :op :b | a - b ] ].	^ expression end! !
-
-!PPExpressionParserTest methodsFor: 'testing' stamp: 'FirstnameLastname 11/26/2009 22:13'!
-testPostfixAdd	self assert: '0++' is: 1.	self assert: '0++++' is: 2.	self assert: '0++++++' is: 3.	self assert: '0+++1' is: 2.	self assert: '0+++++1' is: 3.	self assert: '0+++++++1' is: 4! !
-
-!PPExpressionParserTest methodsFor: 'testing' stamp: 'FirstnameLastname 11/26/2009 22:11'!
-testPostfixSub	self assert: '1--' is: 0.	self assert: '2----' is: 0.	self assert: '3------' is: 0.	self assert: '2---1' is: 0.	self assert: '3-----1' is: 0.	self assert: '4-------1' is: 0.! !
-
-!PPExpressionParserTest methodsFor: 'testing' stamp: 'FirstnameLastname 11/26/2009 22:13'!
-testPrefixNegate	self assert: '1' is: 1.	self assert: '-1' is: -1.	self assert: '--1' is: 1.	self assert: '---1' is: -1! !
-
-!PPExpressionParserTest class methodsFor: 'testing' stamp: 'lr 4/6/2010 19:40'!
-shouldInheritSelectors	^ true! !
-
 !PPExtensionTest methodsFor: 'testing-parser' stamp: 'lr 5/2/2010 18:18'!
 testCharacter	| parser |	parser := $a asParser.	self assert: parser parse: 'a' to: $a.	self assert: parser fail: 'b'! !
 
@@ -391,78 +404,6 @@ testSymbol	| parser |	parser := #any asParser.	self assert: parser parse: 'a'
 !PPExtensionTest methodsFor: 'testing-stream' stamp: 'lr 2/7/2010 20:53'!
 testText	| stream |	stream := 'abc' asText asPetitStream.	self assert: stream class = PPStream! !
 
-!PPLambdaParser methodsFor: 'productions' stamp: 'lr 4/6/2010 19:38'!
-abstraction	^ $\ asParser token trim , variable , $. asParser token trim , expression ==> [ :node | Array with: node second with: node fourth ]! !
-
-!PPLambdaParser methodsFor: 'productions' stamp: 'lr 4/6/2010 19:38'!
-application	^ $( asParser token trim , expression , expression , $) asParser token trim ==> [ :node | Array with: node second with: node third ]! !
-
-!PPLambdaParser methodsFor: 'productions' stamp: 'lr 9/15/2008 09:29'!
-expression	^ variable / abstraction / application! !
-
-!PPLambdaParser methodsFor: 'accessing' stamp: 'lr 5/19/2008 11:35'!
-start	^ expression end! !
-
-!PPLambdaParser methodsFor: 'productions' stamp: 'lr 4/6/2010 19:37'!
-variable	^ (#letter asParser , #word asParser star) token trim ==> [ :token | token value ]! !
-
-!PPLambdaParser class methodsFor: 'curch-booleans' stamp: 'lr 4/3/2009 08:28'!
-and	^ self parse: '\p.\q.((p q) p)'! !
-
-!PPLambdaParser class methodsFor: 'curch-booleans' stamp: 'lr 4/3/2009 08:28'!
-false	^ self parse: '\x.\y.y'! !
-
-!PPLambdaParser class methodsFor: 'curch-booleans' stamp: 'lr 4/3/2009 08:28'!
-ifthenelse	^ self parse: '\p.p'! !
-
-!PPLambdaParser class methodsFor: 'curch-booleans' stamp: 'lr 4/3/2009 08:28'!
-not	^ self parse: '\p.\a.\b.((p b) a)'! !
-
-!PPLambdaParser class methodsFor: 'curch-booleans' stamp: 'lr 4/3/2009 08:28'!
-or	^ self parse: '\p.\q.((p p) q)'! !
-
-!PPLambdaParser class methodsFor: 'curch-booleans' stamp: 'lr 4/3/2009 08:28'!
-true	^ self parse: '\x.\y.x'! !
-
-!PPLambdaParserTest methodsFor: 'accessing' stamp: 'FirstnameLastname 11/26/2009 21:53'!
-parserClass	^ PPLambdaParser! !
-
-!PPLambdaParserTest methodsFor: 'testing' stamp: 'lr 4/30/2008 09:38'!
-testAbstraction	self assert: '\x.y' is: #('x' 'y').	self assert: '\x.\y.z' is: #('x' ('y' 'z'))! !
-
-!PPLambdaParserTest methodsFor: 'testing-curch' stamp: 'FirstnameLastname 11/26/2009 21:53'!
-testAnd	self assert: self parserClass and = #('p' ('q' (('p' 'q') 'p')))! !
-
-!PPLambdaParserTest methodsFor: 'testing' stamp: 'lr 4/30/2008 09:38'!
-testApplication	self assert: '(x x)' is: #('x' 'x').	self assert: '(x y)' is: #('x' 'y').	self assert: '((x y) z)' is: #(('x' 'y') 'z').	self assert: '(x (y z))' is: #('x' ('y' 'z'))! !
-
-!PPLambdaParserTest methodsFor: 'testing-curch' stamp: 'FirstnameLastname 11/26/2009 21:53'!
-testFalse	self assert: self parserClass false = #('x' ('y' 'y'))! !
-
-!PPLambdaParserTest methodsFor: 'testing-curch' stamp: 'FirstnameLastname 11/26/2009 21:53'!
-testIfThenElse	self assert: self parserClass ifthenelse = #('p' 'p')! !
-
-!PPLambdaParserTest methodsFor: 'testing-curch' stamp: 'FirstnameLastname 11/26/2009 21:53'!
-testNot	self assert: self parserClass not = #('p' ('a' ('b' (('p' 'b') 'a'))))! !
-
-!PPLambdaParserTest methodsFor: 'testing-curch' stamp: 'FirstnameLastname 11/26/2009 21:53'!
-testOr	self assert: self parserClass or = #('p' ('q' (('p' 'p') 'q')))! !
-
-!PPLambdaParserTest methodsFor: 'testing-utilities' stamp: 'lr 11/29/2010 11:29'!
-testParseOnError	| beenHere |	result := self parserClass		parse: '\x.y'		onError: [ self fail ].	self assert: result = #('x' 'y').		beenHere := false.	result := self parserClass		parse: '\x.'		onError: [ beenHere := true ].	self assert: beenHere.		beenHere := false.	result := self parserClass		parse: '\x.'		onError: [ :fail | beenHere := true. fail ].	self assert: beenHere.	self assert: (result message includesSubString: '$(').	self assert: (result message includesSubString: 'expected').	self assert: (result position = 0).	beenHere := false.	result := self parserClass		parse: '\x.'		onError: [ :msg :pos | 			self assert: (msg includesSubString: '$(').			self assert: (msg includesSubString: 'expected').			self assert: (pos = 0).			beenHere := true ].	self assert: result.	self assert: beenHere! !
-
-!PPLambdaParserTest methodsFor: 'testing-utilities' stamp: 'lr 11/29/2010 11:29'!
-testParseStartingAtOnError	| beenHere |	result := self parserClass		parse: 'x'		startingAt: #variable		onError: [ self fail ].	self assert: result = 'x'.		beenHere := false.	result := self parserClass		parse: '\'		startingAt: #variable		onError: [ beenHere := true ].	self assert: beenHere.		beenHere := false.	result := self parserClass		parse: '\'		startingAt: #variable		onError: [ :fail | beenHere := true. fail ].	self assert: beenHere.	self assert: result message = 'letter expected'.	self assert: result position = 0.	beenHere := false.	result := self parserClass		parse: '\'		startingAt: #variable		onError: [ :msg :pos | 			self assert: msg = 'letter expected'.			self assert: pos = 0.			beenHere := true ].	self assert: beenHere! !
-
-!PPLambdaParserTest methodsFor: 'testing-utilities' stamp: 'FirstnameLastname 11/26/2009 21:56'!
-testProductionAt	self assert: (parser productionAt: #foo) isNil.	self assert: (parser productionAt: #foo ifAbsent: [ true ]).		self assert: (parser productionAt: #start) notNil.	self assert: (parser productionAt: #start ifAbsent: [ true ]) notNil.		self assert: (parser productionAt: #variable) notNil.	self assert: (parser productionAt: #variable ifAbsent: [ true ]) notNil! !
-
-!PPLambdaParserTest methodsFor: 'testing-curch' stamp: 'FirstnameLastname 11/26/2009 21:53'!
-testTrue	self assert: self parserClass true = #('x' ('y' 'x'))! !
-
-!PPLambdaParserTest methodsFor: 'testing' stamp: 'lr 4/30/2008 09:33'!
-testVariable	self assert: 'x' is: 'x'.	self assert: 'xy' is: 'xy'.	self assert: 'x12' is: 'x12'! !
-
 !PPObjectTest methodsFor: 'parsers' stamp: 'lr 12/9/2010 10:25'!
 integer	^ PPPredicateObjectParser		on: [ :each | each isInteger ]		message: 'integer expected'! !
 
@@ -483,12 +424,6 @@ testSequence	| parser |	parser := self integer , self string.	self assert: pa
 
 !PPObjectTest methodsFor: 'testing' stamp: 'lr 10/30/2010 12:47'!
 testString	self assert: self string parse: #('abc') to: 'abc'.	self assert: self string fail: #(123)! !
-
-!PPParserResource methodsFor: 'accessing' stamp: 'lr 9/15/2010 12:12'!
-parserAt: aParserClass	"Answer a cached instance of aParserClass."		^ parsers at: aParserClass name ifAbsentPut: [ aParserClass new ]! !
-
-!PPParserResource methodsFor: 'running' stamp: 'lr 3/29/2010 15:20'!
-setUp	super setUp.	parsers := Dictionary new! !
 
 !PPParserTest methodsFor: 'testing-mapping' stamp: 'lr 5/2/2010 12:22'!
 testAction	| block parser |	block := [ :char | char asUppercase ].	parser := #any asParser ==> block.	self assert: parser block = block.	self assert: parser parse: 'a' to: $A.	self assert: parser parse: 'b' to: $B! !
@@ -754,9 +689,9 @@ testXor	| parser |	parser := ($a asParser / $b asParser)			|  ($b asParser / 
 !PPPredicateTest methodsFor: 'utilities' stamp: 'lr 6/12/2010 08:37'!
 assertCharacterSets: aParser	"Assert the character set of aParser does not overlap with the character set with the negated parser, and that they both cover the complete character space."	| positives negatives |	positives := self parsedCharacterSet: aParser.	negatives := self parsedCharacterSet: aParser negate.	self charactersDo: [ :char | 		| positive negative |		positive := positives includes: char.		negative := negatives includes: char.		self 			assert: ((positive and: [ negative not ])				or: [ positive not and: [ negative ] ])			description: char printString , ' should be in exactly one set' ]! !
 
-!PPPredicateTest methodsFor: 'private' stamp: 'pmon 5/31/2012 23:53'!
+!PPPredicateTest methodsFor: 'private' stamp: 'ck 11/27/2017 14:25:33'!
 charactersDo: aBlock
-	0 to: 255 do: [ :index | aBlock value: (Character value: index) ]! !
+	0 to: 255 do: [ :index | aBlock value: (Character numericValue: index) ]! !
 
 !PPPredicateTest methodsFor: 'utilities' stamp: 'lr 6/12/2010 08:37'!
 parsedCharacterSet: aParser	| result |	result := WriteStream on: String new.	self charactersDo: [ :char |		(aParser matches: (String with: char))			ifTrue: [ result nextPut: char ] ].	^ result contents! !
@@ -933,3 +868,69 @@ testStop	| result |	result := self 		parse: 'foo'		using: self identifier.	
 
 !PPTokenTest methodsFor: 'testing' stamp: 'lr 4/3/2009 08:51'!
 testValue	| input result |	input := 'foo'.	result := self 		parse: input		using: self identifier.	self assert: result value = input.	self deny: result value == input! !
+
+!PPParserResource methodsFor: 'accessing' stamp: 'lr 9/15/2010 12:12'!
+parserAt: aParserClass	"Answer a cached instance of aParserClass."		^ parsers at: aParserClass name ifAbsentPut: [ aParserClass new ]! !
+
+!PPParserResource methodsFor: 'running' stamp: 'lr 3/29/2010 15:20'!
+setUp	super setUp.	parsers := Dictionary new! !
+
+!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 4/6/2010 19:38'!
+addition	^ (factors separatedBy: ($+ asParser / $- asParser) token trim) 		foldLeft: [ :a :op :b | a perform: op value asSymbol with: b ]! !
+
+!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 9/15/2008 09:28'!
+factors	^ multiplication / power! !
+
+!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 4/6/2010 19:38'!
+multiplication	^ (power separatedBy: ($* asParser / $/ asParser) token trim)		foldLeft: [ :a :op :b | a perform: op value asSymbol with: b ]! !
+
+!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 4/6/2010 19:38'!
+number	^ ($- asParser optional , #digit asParser plus , ($. asParser , #digit asParser plus) optional) token trim ==> [ :token | token value asNumber ]! !
+
+!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 4/6/2010 19:38'!
+parentheses	^ $( asParser flatten trim , terms , $) asParser flatten trim ==> #second! !
+
+!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 4/6/2010 19:38'!
+power	^ (primary separatedBy: $^ asParser token trim) foldRight: [ :a :op :b | a raisedTo: b ]! !
+
+!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 9/15/2008 09:28'!
+primary	^ number / parentheses! !
+
+!PPArithmeticParser methodsFor: 'accessing' stamp: 'lr 7/3/2008 17:06'!
+start	^ terms end! !
+
+!PPArithmeticParser methodsFor: 'grammar' stamp: 'lr 9/15/2008 09:29'!
+terms	^ addition / factors! !
+
+!PPLambdaParser methodsFor: 'productions' stamp: 'lr 4/6/2010 19:38'!
+abstraction	^ $\ asParser token trim , variable , $. asParser token trim , expression ==> [ :node | Array with: node second with: node fourth ]! !
+
+!PPLambdaParser methodsFor: 'productions' stamp: 'lr 4/6/2010 19:38'!
+application	^ $( asParser token trim , expression , expression , $) asParser token trim ==> [ :node | Array with: node second with: node third ]! !
+
+!PPLambdaParser methodsFor: 'productions' stamp: 'lr 9/15/2008 09:29'!
+expression	^ variable / abstraction / application! !
+
+!PPLambdaParser methodsFor: 'accessing' stamp: 'lr 5/19/2008 11:35'!
+start	^ expression end! !
+
+!PPLambdaParser methodsFor: 'productions' stamp: 'lr 4/6/2010 19:37'!
+variable	^ (#letter asParser , #word asParser star) token trim ==> [ :token | token value ]! !
+
+!PPLambdaParser class methodsFor: 'curch-booleans' stamp: 'lr 4/3/2009 08:28'!
+and	^ self parse: '\p.\q.((p q) p)'! !
+
+!PPLambdaParser class methodsFor: 'curch-booleans' stamp: 'lr 4/3/2009 08:28'!
+false	^ self parse: '\x.\y.y'! !
+
+!PPLambdaParser class methodsFor: 'curch-booleans' stamp: 'lr 4/3/2009 08:28'!
+ifthenelse	^ self parse: '\p.p'! !
+
+!PPLambdaParser class methodsFor: 'curch-booleans' stamp: 'lr 4/3/2009 08:28'!
+not	^ self parse: '\p.\a.\b.((p b) a)'! !
+
+!PPLambdaParser class methodsFor: 'curch-booleans' stamp: 'lr 4/3/2009 08:28'!
+or	^ self parse: '\p.\q.((p p) q)'! !
+
+!PPLambdaParser class methodsFor: 'curch-booleans' stamp: 'lr 4/3/2009 08:28'!
+true	^ self parse: '\x.\y.x'! !
